@@ -59,6 +59,8 @@
     "next-optimized-images": "2.5.3",
     "prettier": "1.18.2",
     "preval.macro": "3.0.0",
+    "responsive-loader": "1.2.0",
+    "sharp": "0.22.1",
     "typescript": "3.5.2"
   },
   "// 1": "Pin fstream version for favico/rfg-api",
