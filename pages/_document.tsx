@@ -8,9 +8,10 @@ import Document, {
 } from 'next/document'
 import preval from 'preval.macro'
 import {ServerStyleSheet} from 'fannypack'
+import React from 'react'
 
 const faviconsHtml = preval`
-  module.exports = require('fs').readFileSync(require.resolve('../static/favicons.html'), 'utf8').replace(/\\n/g, '');
+  module.exports = require('fs').readFileSync(require.resolve('../static/favicons.html'), 'utf8').replace(/\\n/g, '')
 `
 
 class MyDocument extends Document {
