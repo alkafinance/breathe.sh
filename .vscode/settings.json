@@ -31,8 +31,8 @@
   "files.exclude": {
     "**/.git/": true,
     "**/.DS_Store": true,
-    ".cache/": true,
-    "dist/": true
+    ".next/": true,
+    "out/": true
   },
   "search.exclude": {
     "**/node_modules/": true
