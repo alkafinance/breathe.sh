@@ -11,6 +11,7 @@ import {
 } from 'fannypack'
 import React from 'react'
 import {PageLayout} from '../components/PageLayout'
+import {Res} from '../resources'
 
 const StyledList = styled(List)`
   list-style: none;
@@ -40,7 +41,7 @@ const StyledList = styled(List)`
 const Home: React.FC = _props => {
   return (
     <PageLayout>
-      <Box backgroundColor="rgba(0, 0, 0, 0.75)" padding="2rem">
+      <Box backgroundColor="rgba(0, 0, 0, 0.75)" padding="major-3">
         <StyledList isOrdered color="textInverted">
           <List.Item>Enter the URL of any site that stresses you out</List.Item>
           <List.Item>Bookmark the redirect link</List.Item>
@@ -55,27 +56,27 @@ const Home: React.FC = _props => {
           type="url"
           placeholder="https://"
           defaultValue="https://"
-          marginTop="2rem"
-          color=""
+          marginTop="major-3"
         />
-        <Set marginTop="2rem" justifyContent="flex-end">
-          <Button size="medium" kind="outlined" iconAfter="link">
+        <Set marginTop="major-3" justifyContent="flex-end">
+          <Button size="medium" kind="outlined">
             Copy Link
+            <Flex marginLeft="major-1" alignItems="center">
+              <Res.Icon.link width="18" height="18" />
+            </Flex>
           </Button>
-          <Button
-            size="medium"
-            kind="outlined"
-            iconAfter="navigation-circle-right">
+          <Button size="medium" kind="outlined">
             Go
+            <Flex marginLeft="major-1" alignItems="center">
+              <Res.Icon.navigation_circle_right width="18" height="18" />
+            </Flex>
           </Button>
         </Set>
       </Box>
-      <Box marginTop="2rem" color="textInverted">
+      <Box marginTop="major-3" color="textInverted">
         <Flex flexDirection="column" alignItems="center">
           <Text>See an Example</Text>
-          <Link color="textInverted" href="#">
-            MSNBC Election Coverage
-          </Link>
+          <Link href="#">MSNBC Election Coverage</Link>
         </Flex>
       </Box>
     </PageLayout>
