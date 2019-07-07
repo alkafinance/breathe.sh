@@ -40,7 +40,8 @@
     "html-react-parser": "^0.8.1",
     "next": "8.1.0",
     "react": "16.8.6",
-    "react-dom": "16.8.6"
+    "react-dom": "16.8.6",
+    "react-progressive-image": "0.6.0"
   },
   "devDependencies": {
     "@types/next": "8.0.5",
@@ -50,8 +51,12 @@
     "babel-plugin-macros": "2.6.1",
     "favico": "1.2.2",
     "husky": "2.4.1",
+    "imagemin-optipng": "7.0.0",
     "lint-staged": "8.2.1",
+    "lqip-loader": "2.2.0",
+    "next-compose-plugins": "2.2.0",
     "next-offline": "4.0.2",
+    "next-optimized-images": "2.5.3",
     "prettier": "1.18.2",
     "preval.macro": "3.0.0",
     "typescript": "3.5.2"

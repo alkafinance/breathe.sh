@@ -7,7 +7,7 @@ import Document, {
   NextScript,
 } from 'next/document'
 import preval from 'preval.macro'
-import {ServerStyleSheet} from 'reakit'
+import {ServerStyleSheet} from 'fannypack'
 
 const faviconsHtml = preval`
   module.exports = require('fs').readFileSync(require.resolve('../static/favicons.html'), 'utf8').replace(/\\n/g, '');
