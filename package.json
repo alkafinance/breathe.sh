@@ -1,0 +1,63 @@
+{
+  "name": "@alkafinance/br8he",
+  "version": "0.0.0",
+  "private": true,
+  "repository": "git@github.com:alkafinance/br8he.git",
+  "license": "UNLICENSED",
+  "scripts": {
+    "typecheck": "tsc --noEmit --pretty",
+    "dev": "parcel public/index.html",
+    "build": "parcel build public/index.html",
+    "postinstall": "bash scripts/postinstall.sh"
+  },
+  "cache": {
+    "inDev": true,
+    "swDest": "public/service-worker.js"
+  },
+  "assetsPath": "assets",
+  "prettier": {
+    "bracketSpacing": false,
+    "jsxBracketSameLine": true,
+    "printWidth": 80,
+    "semi": false,
+    "singleQuote": true,
+    "tabWidth": 2,
+    "trailingComma": "all",
+    "useTabs": false
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "pre-push": "yarn typecheck"
+    }
+  },
+  "lint-staged": {
+    "**/*.{js,ts,tsx,json}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "dependencies": {
+    "@reach/router": "1.2.1",
+    "fannypack": "4.21.3",
+    "react": "16.8.6",
+    "react-dom": "16.8.6"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0-0",
+    "@babel/preset-react": "^7.0.0",
+    "@fullhuman/postcss-purgecss": "1.2.0",
+    "@types/node": "^12.0.8",
+    "@types/reach__router": "1.2.4",
+    "@types/react": "16.8.22",
+    "@types/react-dom": "16.8.4",
+    "autoprefixer": "9.6.0",
+    "husky": "2.4.1",
+    "lint-staged": "8.2.1",
+    "parcel-bundler": "1.12.3",
+    "parcel-plugin-sw-cache": "0.3.1",
+    "prettier": "1.18.2",
+    "tailwindcss": "1.0.4",
+    "typescript": "3.5.2"
+  }
+}

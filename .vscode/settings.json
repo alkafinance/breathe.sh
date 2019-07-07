@@ -1,0 +1,54 @@
+{
+  "editor.formatOnSave": false,
+  "editor.insertSpaces": true,
+  "editor.rulers": [80],
+  "editor.tabSize": 2,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": false
+  },
+  "[javascript]": {
+    "editor.formatOnSave": true
+  },
+  "[javascriptreact]": {
+    "editor.formatOnSave": true
+  },
+  "[typescript]": {
+    "editor.formatOnSave": true
+  },
+  "[typescriptreact]": {
+    "editor.formatOnSave": true
+  },
+  "[json]": {
+    "editor.formatOnSave": true
+  },
+  "[jsonc]": {
+    "editor.formatOnSave": true
+  },
+  "[yaml]": {
+    "editor.formatOnSave": true
+  },
+
+  "files.exclude": {
+    "**/.git/": true,
+    "**/.DS_Store": true,
+    ".cache/": true,
+    "dist/": true
+  },
+  "search.exclude": {
+    "**/node_modules/": true
+  },
+
+  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": false,
+  "javascript.implicitProjectConfig.checkJs": true,
+  "javascript.suggestionActions.enabled": false,
+  "javascript.validate.enable": true,
+  "typescript.tsdk": "./node_modules/typescript/lib",
+  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": false,
+  "typescript.disableAutomaticTypeAcquisition": true,
+  "typescript.format.enable": false,
+  "typescript.preferences.quoteStyle": "single",
+  "typescript.preferences.renameShorthandProperties": true,
+
+  "emmet.showExpandedAbbreviation": "never",
+  "css.lint.unknownAtRules": "ignore"
+}

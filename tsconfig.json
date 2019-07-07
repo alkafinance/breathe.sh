@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    // basic
+    "module": "commonjs",
+    "target": "es5",
+    "jsx": "react",
+    "lib": ["es2017", "esnext.asynciterable", "dom"],
+    "allowJs": true,
+    "checkJs": true,
+
+    // strict type-checking
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "strictFunctionTypes": true,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": true,
+
+    // additional checks
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+
+    // module resolution
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "types": []
+  },
+  "include": ["./@types/**/*", "./src/**/*"]
+}
