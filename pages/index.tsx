@@ -62,7 +62,10 @@ const Home: React.FC = _props => {
           <Button size="medium" kind="outlined" iconAfter="link">
             Copy Link
           </Button>
-          <Button size="medium" kind="outlined" iconAfter="circleRight">
+          <Button
+            size="medium"
+            kind="outlined"
+            iconAfter="navigation-circle-right">
             Go
           </Button>
         </Set>
