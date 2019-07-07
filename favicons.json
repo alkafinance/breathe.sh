@@ -1,0 +1,52 @@
+{
+  "output": "./static",
+  "cache": "./node_modules/.cache/favicons",
+  "iconsPath": "/static",
+  "masterPicture": "./assets/icon.png",
+  "design": {
+    "ios": {
+      "appName": "Breathe",
+      "pictureAspect": "backgroundAndMargin",
+      "backgroundColor": "#ffffff",
+      "margin": "14%"
+    },
+    "windows": {
+      "appName": "Breathe",
+      "pictureAspect": "white_silhouette",
+      "backgroundColor": "#293e6d",
+      "onConflict": "override",
+      "masterPicture": "./assets/icon-foreground.svg"
+    },
+    "androidChrome": {
+      "pictureAspect": "background_and_margin",
+      "backgroundColor": "#ffffff",
+      "margin": "14%",
+      "themeColor": "#ffffff",
+      "manifest": {
+        "name": "Breathe",
+        "display": "standalone",
+        "orientation": "portrait",
+        "startUrl": "/",
+        "onConflict": "override",
+        "declared": "true"
+      }
+    },
+    "safariPinnedTab": {
+      "pictureAspect": "silhouette",
+      "themeColor": "#293e6d",
+      "masterPicture": "./assets/icon-foreground.svg"
+    },
+    "openGraph": {
+      "pictureAspect": "background_and_margin",
+      "margin": "12%",
+      "backgroundColor": "#ffffff",
+      "ratio": "1.91:1"
+    }
+  },
+  "settings": {
+    "compression": "2",
+    "scalingAlgorithm": "Lanczos",
+    "errorOnImageTooSmall": true
+  },
+  "versioning": true
+}

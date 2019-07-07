@@ -10,7 +10,8 @@
     "build": "next build",
     "export": "yarn build && next export",
     "start": "next start",
-    "postinstall": "bash scripts/postinstall.sh"
+    "postinstall": "bash scripts/postinstall.sh",
+    "codegen:favicons": "favico --config favicons.json"
   },
   "prettier": {
     "bracketSpacing": false,
@@ -36,6 +37,7 @@
   },
   "dependencies": {
     "fannypack": "4.21.3",
+    "html-react-parser": "^0.8.1",
     "next": "8.1.0",
     "react": "16.8.6",
     "react-dom": "16.8.6"
@@ -45,9 +47,16 @@
     "@types/node": "^12.0.8",
     "@types/react": "16.8.22",
     "@zeit/next-typescript": "1.1.1",
+    "babel-plugin-macros": "2.6.1",
+    "favico": "1.2.2",
     "husky": "2.4.1",
     "lint-staged": "8.2.1",
     "prettier": "1.18.2",
+    "preval.macro": "3.0.0",
     "typescript": "3.5.2"
+  },
+  "// 1": "Pin fstream version for favico/rfg-api",
+  "resolutions": {
+    "fstream": "^1.0.2"
   }
 }

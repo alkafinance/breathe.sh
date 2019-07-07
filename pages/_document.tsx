@@ -1,11 +1,17 @@
+import parseHtml from 'html-react-parser'
 import Document, {
+  Head,
   Html,
   Main,
-  NextScript,
-  Head,
   NextDocumentContext,
+  NextScript,
 } from 'next/document'
+import preval from 'preval.macro'
 import {ServerStyleSheet} from 'reakit'
+
+const faviconsHtml = preval`
+  module.exports = require('fs').readFileSync(require.resolve('../static/favicons.html'), 'utf8').replace(/\\n/g, '');
+`
 
 class MyDocument extends Document {
   static async getInitialProps(ctx: NextDocumentContext) {
@@ -34,35 +40,8 @@ class MyDocument extends Document {
           <meta name="description" content="Breathe!" />
           <meta name="mobile-web-app-capable" content="yes" />
           <meta name="apple-mobile-web-app-capable" content="yes" />
-          <meta name="theme-color" content="#ffffff" />
-          <meta
-            name="apple-mobile-web-app-status-bar-style"
-            content="black-translucent"
-          />
-          <link
-            rel="apple-touch-icon"
-            sizes="180x180"
-            href="/static/apple-touch-icon.png"
-          />
-          <link
-            rel="icon"
-            type="image/png"
-            sizes="32x32"
-            href="/static/favicon-32x32.png"
-          />
-          <link
-            rel="icon"
-            type="image/png"
-            sizes="16x16"
-            href="/static/favicon-16x16.png"
-          />
-          <link rel="manifest" href="/static/manifest.webmanifest" />
-          <link
-            rel="mask-icon"
-            href="/static/safari-pinned-tab.svg"
-            color="#5bbad5"
-          />
         </Head>
+        <Head>{parseHtml(faviconsHtml)}</Head>
         <body>
           <Main />
           <NextScript />
