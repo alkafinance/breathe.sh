@@ -21,3 +21,7 @@
 
 # Master assets
 /assets/*.master.mp4
+
+# Fix ignored icons/ directory bug
+# @see https://stackoverflow.com/a/21110085
+!/assets/icons/
