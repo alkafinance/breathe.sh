@@ -43,7 +43,7 @@
   "dependencies": {
     "copy-text-to-clipboard": "2.1.0",
     "fannypack": "4.21.3",
-    "html-react-parser": "^0.8.1",
+    "html-react-parser": "0.8.1",
     "next": "8.1.0",
     "react": "16.8.6",
     "react-dom": "16.8.6",
@@ -64,7 +64,7 @@
     "eslint-plugin-react-hooks": "1.6.1",
     "favico": "1.2.2",
     "husky": "2.4.1",
-    "imagemin-optipng": "7.0.0",
+    "imagemin-mozjpeg": "8.0.0",
     "lint-staged": "8.2.1",
     "lqip-loader": "2.2.0",
     "next-compose-plugins": "2.2.0",
