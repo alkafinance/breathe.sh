@@ -63,11 +63,15 @@ export const PageBackground = React.memo(_props => {
 
                   video.addEventListener('canplay', handleCanPlay)
                   video.load()
+                  if (video.readyState > 3) {
+                    handleCanPlay()
+                  }
                 }
               }}
               height="100%"
               width="100%"
               style={{objectFit: 'cover'}}
+              preload="none"
               loop>
               {/* <source
                 src={require('../assets/black-sand.webm')}
