@@ -1,12 +1,21 @@
-import {Flex, Set, Text} from 'fannypack'
+import {Flex, Set, Text, styled, theme} from 'fannypack'
 import React from 'react'
 import {Res} from '../resources'
 
+const Container = styled(Flex)`
+  flex-direction: row;
+  justify-content: space-between;
+  @media (max-width: ${theme('fannypack.layout.tabletBreakpoint')}px) {
+    & {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 1rem;
+    }
+  }
+`
+
 export const PageFooter: React.FC = _props => (
-  <Flex
-    padding="0.5rem 1rem"
-    flexDirection="row"
-    justifyContent="space-between">
+  <Container padding="0.5rem 1rem">
     <Set spacing="major-1">
       {[
         {
@@ -46,5 +55,5 @@ export const PageFooter: React.FC = _props => (
         </Text>
       </Flex>
     </a>
-  </Flex>
+  </Container>
 )
