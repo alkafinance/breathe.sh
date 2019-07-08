@@ -69,7 +69,8 @@ ffmpeg -i "$master_video_path" \
 #      https://developers.google.com/media/vp9/settings/vod/#quality
 ffmpeg -i "$master_video_path" \
   -map_metadata -1 \
-  -c:v libvpx-vp9 -crf 31 -b:v 0 \
+  -c:v libvpx-vp9 -crf 31 -minrate 800K -maxrate 800K -b:v 800K \
+  -pix_fmt yuv420p \
   -movflags +faststart \
   -an \
   "$@" "${master_video_dir}/${master_video_name}.webm"

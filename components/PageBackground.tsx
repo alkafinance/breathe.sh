@@ -53,10 +53,10 @@ export const PageBackground = React.memo(_props => {
               autoPlay
               muted
               loop>
-              {/* <source
+              <source
                 src={require('../assets/black-sand.webm')}
                 type="video/webm"
-              /> */}
+              />
               <source
                 src={require('../assets/black-sand.hevc.mp4')}
                 type="video/mp4; codecs=hevc"
