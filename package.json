@@ -9,7 +9,7 @@
     "lint": "eslint --ext .js,.ts,.tsx --cache .",
     "dev": "next",
     "build": "next build",
-    "export": "yarn build && next export",
+    "export": "rm -rf .next out && yarn build && next export",
     "start": "next start",
     "postinstall": "patch-package; bash scripts/postinstall.sh",
     "codegen:favicons": "favico --config favicons.json"
