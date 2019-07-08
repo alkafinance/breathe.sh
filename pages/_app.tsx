@@ -1,8 +1,10 @@
-import {ThemeProvider as FannypackThemeProvider, css} from 'fannypack'
+import {css, ThemeProvider as FannypackThemeProvider} from 'fannypack'
 import {ThemeConfig} from 'fannypack/ts/types'
 import App, {Container} from 'next/app'
 import Head from 'next/head'
+import Router from 'next/router'
 import React from 'react'
+import {initGA, logPageView} from '../utils/analytics'
 
 const theme: ThemeConfig = {
   global: {
@@ -35,6 +37,14 @@ const theme: ThemeConfig = {
 }
 
 class MyApp extends App {
+  componentDidMount() {
+    initGA()
+    logPageView()
+    if (Router.router) {
+      Router.router.events.on('routeChangeComplete', logPageView)
+    }
+  }
+
   render() {
     const {Component, pageProps} = this.props
 
