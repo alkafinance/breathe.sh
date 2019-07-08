@@ -6,11 +6,12 @@
   "license": "UNLICENSED",
   "scripts": {
     "typecheck": "tsc --noEmit --pretty",
+    "lint": "eslint --ext .js,.ts,.tsx --cache .",
     "dev": "next",
     "build": "next build",
     "export": "yarn build && next export",
     "start": "next start",
-    "postinstall": "bash scripts/postinstall.sh",
+    "postinstall": "patch-package; bash scripts/postinstall.sh",
     "codegen:favicons": "favico --config favicons.json"
   },
   "prettier": {
@@ -26,12 +27,16 @@
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged",
-      "pre-push": "yarn typecheck"
+      "pre-push": "yarn typecheck && yarn lint"
     }
   },
   "lint-staged": {
     "**/*.{js,ts,tsx,json}": [
       "prettier --write",
+      "git add"
+    ],
+    "**/*.{js,ts,tsx}": [
+      "eslint --ext .js,.ts,.tsx --cache",
       "git add"
     ]
   },
@@ -48,8 +53,14 @@
     "@types/next": "8.0.5",
     "@types/node": "^12.0.8",
     "@types/react": "16.8.22",
+    "@typescript-eslint/eslint-plugin": "1.11.0",
+    "@typescript-eslint/parser": "1.11.0",
     "@zeit/next-typescript": "1.1.1",
     "babel-plugin-macros": "2.6.1",
+    "eslint": "6.0.1",
+    "eslint-config-prettier": "6.0.0",
+    "eslint-plugin-react": "7.14.2",
+    "eslint-plugin-react-hooks": "1.6.1",
     "favico": "1.2.2",
     "husky": "2.4.1",
     "imagemin-optipng": "7.0.0",
@@ -59,6 +70,7 @@
     "next-offline": "4.0.2",
     "next-optimized-images": "2.5.3",
     "next-react-svg": "1.1.0",
+    "patch-package": "6.1.2",
     "prettier": "1.18.2",
     "preval.macro": "3.0.0",
     "responsive-loader": "1.2.0",

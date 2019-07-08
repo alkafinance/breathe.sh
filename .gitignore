@@ -15,3 +15,6 @@
 # Compilation artifacts
 /.next/
 /out/
+
+# ESLint
+/.eslintcache

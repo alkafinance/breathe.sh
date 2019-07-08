@@ -1,0 +1,9 @@
+# Unignore dotfiles
+!.*
+
+# Node.js
+**/node_modules/
+
+# Compilation artifacts
+**/.next/
+**/out/

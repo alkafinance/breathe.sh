@@ -1,0 +1,14 @@
+diff --git a/node_modules/fannypack/ts/types/theme.d.ts b/node_modules/fannypack/ts/types/theme.d.ts
+index 22df4af..bdcf195 100644
+--- a/node_modules/fannypack/ts/types/theme.d.ts
++++ b/node_modules/fannypack/ts/types/theme.d.ts
+@@ -1,7 +1,7 @@
+-import { InterpolationValue } from 'styled-components';
++import { FlattenSimpleInterpolation } from 'styled-components';
+ import { IconDefinition } from '@fortawesome/fontawesome-common-types';
+ import { ParsedIcons, Opts as ParseIconsOpts } from '../parseIcons';
+-export declare type Stylesheet = InterpolationValue[];
++export declare type Stylesheet = FlattenSimpleInterpolation;
+ export declare type ActionButtonsThemeConfig = {
+     base?: Stylesheet;
+ };
