@@ -1,4 +1,3 @@
 [build]
-  base    = "website"
   command = "yarn export"
   publish = "out"
