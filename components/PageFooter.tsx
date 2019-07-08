@@ -3,7 +3,10 @@ import React from 'react'
 import {Res} from '../resources'
 
 export const PageFooter: React.FC = _props => (
-  <Flex padding="1.5rem" flexDirection="row" justifyContent="space-between">
+  <Flex
+    padding="0.5rem 1rem"
+    flexDirection="row"
+    justifyContent="space-between">
     <Set spacing="major-1">
       {[
         {

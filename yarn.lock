@@ -6378,6 +6378,11 @@ loose-envify@^1.0.0, loose-envify@^1.1.0, loose-envify@^1.3.1, loose-envify@^1.4
   dependencies:
     js-tokens "^3.0.0 || ^4.0.0"
 
+lottie-web@^5.1.3:
+  version "5.5.6"
+  resolved "https://registry.yarnpkg.com/lottie-web/-/lottie-web-5.5.6.tgz#3aa77cb13510ca4121d17e31efcd7978e75e9298"
+  integrity sha512-UUUIjKT9BncCHFIJEfb+1glvd+8MLjrAP1mbX2atE7A9TAtZn3yEz96k5K/n2pC20tEL7Q4xKaN1qyXp+6YSDg==
+
 loud-rejection@^1.0.0:
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/loud-rejection/-/loud-rejection-1.6.0.tgz#5b46f80147edee578870f086d04821cf998e551f"
@@ -8144,6 +8149,14 @@ react-loads-next@8.3.0:
   version "8.3.0"
   resolved "https://registry.yarnpkg.com/react-loads-next/-/react-loads-next-8.3.0.tgz#44b9bcecf656abd5a2048c6dc4a910d98b2c8ac7"
   integrity sha512-uMavttXqz+zuakCRJMRf9DN1+1waV90M/3hvHhaS2emux4H8WcB1eYjnfaNZ4VKJdVjW3xOuwYWTxv5kSpeppg==
+
+react-lottie@1.2.3:
+  version "1.2.3"
+  resolved "https://registry.yarnpkg.com/react-lottie/-/react-lottie-1.2.3.tgz#8544b96939e088658072eea5e12d912cdaa3acc1"
+  integrity sha512-qLCERxUr8M+4mm1LU0Ruxw5Y5Fn/OmYkGfnA+JDM/dZb3oKwVAJCjwnjkj9TMHtzR2U6sMEUD3ZZ1RaHagM7kA==
+  dependencies:
+    babel-runtime "^6.26.0"
+    lottie-web "^5.1.3"
 
 react-media@1.9.2:
   version "1.9.2"

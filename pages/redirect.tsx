@@ -1,6 +1,7 @@
 import {Box, Flex, Text} from 'fannypack'
-import Router, {useRouter} from 'next/router'
-import React, {EffectCallback, useRef, useEffect, useState} from 'react'
+import {useRouter} from 'next/router'
+import React, {EffectCallback, useEffect, useRef, useState} from 'react'
+import Lottie from 'react-lottie'
 import {PageLayout} from '../components/PageLayout'
 
 function useInterval(callback: EffectCallback, delay: number) {
@@ -75,8 +76,19 @@ const Redirect: React.FC = _props => {
   return (
     <PageLayout>
       <Box marginTop="1.5rem">
-        <Flex flexDirection="column" alignItems="center">
-          <Text fontWeight="600">
+        <Flex flexDirection="column" alignItems="center" padding="1.5rem">
+          <Box marginTop="-4rem">
+            <Lottie
+              options={{
+                loop: true,
+                autoplay: true,
+                animationData: require('../assets/seed-of-life.lottie.json'),
+              }}
+              height={600}
+              width={600}
+            />
+          </Box>
+          <Text fontWeight="600" marginTop="-4rem" textAlign="center">
             Redirecting to <a href={toUrl}>{toUrl}</a> in {secsRemaining}{' '}
             {secsRemaining > 1 ? 'seconds' : 'second'}
           </Text>
