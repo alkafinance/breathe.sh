@@ -1,13 +1,11 @@
 import {Box, Image} from 'fannypack'
-import React, {useState} from 'react'
+import React from 'react'
 import ProgressiveImage from 'react-progressive-image'
 // @ts-ignore
 import blackSand from '../assets/black-sand.jpg?resize&sizes[]=640&sizes[]=768&sizes[]=1024&sizes[]=1366&sizes[]=1600&sizes[]=1920'
 
 // eslint-disable-next-line react/display-name
 export const PageBackground = React.memo(_props => {
-  const [videoLoaded, setVideoLoaded] = useState(false)
-
   return (
     <ProgressiveImage
       placeholder=""
@@ -47,31 +45,13 @@ export const PageBackground = React.memo(_props => {
             position="absolute"
             width="100%"
             height="100%"
-            opacity={videoLoaded ? 1 : 0}
-            transition="opacity 250ms ease"
             transform="scale(1.1)">
             <video
-              ref={video => {
-                if (video) {
-                  const handleCanPlay = () => {
-                    setVideoLoaded(true)
-                    video.removeEventListener('canplay', handleCanPlay)
-                    requestAnimationFrame(() => {
-                      video.play()
-                    })
-                  }
-
-                  video.addEventListener('canplay', handleCanPlay)
-                  video.load()
-                  if (video.readyState > 3) {
-                    handleCanPlay()
-                  }
-                }
-              }}
               height="100%"
               width="100%"
               style={{objectFit: 'cover'}}
-              preload="none"
+              autoPlay
+              muted
               loop>
               {/* <source
                 src={require('../assets/black-sand.webm')}

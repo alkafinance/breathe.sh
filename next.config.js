@@ -31,7 +31,7 @@ module.exports = withPlugins(
               loader: 'file-loader',
               options: {
                 outputPath: 'static',
-                publicPath: '_next/static',
+                publicPath: '/_next/static',
                 name: '[path][name].[hash].[ext]',
               },
             },
