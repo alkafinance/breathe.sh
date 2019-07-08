@@ -1,15 +1,18 @@
+import copy from 'copy-text-to-clipboard'
 import {
   Box,
   Button,
   Flex,
   Input,
-  Link,
   List,
   Set,
   styled,
   Text,
+  Toast,
 } from 'fannypack'
-import React from 'react'
+import NextLink from 'next/link'
+import Router from 'next/router'
+import React, {useState} from 'react'
 import {PageLayout} from '../components/PageLayout'
 import {Res} from '../resources'
 
@@ -39,44 +42,98 @@ const StyledList = styled(List)`
 `
 
 const Home: React.FC = _props => {
+  const [redirectPath, setRedirectPath] = useState('/#')
+
   return (
     <PageLayout>
-      <Box backgroundColor="rgba(0, 0, 0, 0.75)" padding="major-3">
-        <StyledList isOrdered color="textInverted">
-          <List.Item>Enter the URL of any site that stresses you out</List.Item>
-          <List.Item>Bookmark the redirect link</List.Item>
-          <List.Item>Next time you visit, follow the bookmarked link</List.Item>
-          <List.Item>
-            Be greeted with a chance to stop and breathe before being redirected
-            to your more stressful activities
-          </List.Item>
-        </StyledList>
-        <Input
-          a11yLabel="URL"
-          type="url"
-          placeholder="https://"
-          defaultValue="https://"
-          marginTop="major-3"
-        />
-        <Set marginTop="major-3" justifyContent="flex-end">
-          <Button size="medium" kind="outlined">
-            Copy Link
-            <Flex marginLeft="major-1" alignItems="center">
-              <Res.Icon.link width="18" height="18" />
-            </Flex>
-          </Button>
-          <Button size="medium" kind="outlined">
-            Go
-            <Flex marginLeft="major-1" alignItems="center">
-              <Res.Icon.navigation_circle_right width="18" height="18" />
-            </Flex>
-          </Button>
-        </Set>
-      </Box>
-      <Box marginTop="major-3" color="textInverted">
+      <Toast.Container>
+        {toast => (
+          <form
+            onSubmit={event => {
+              event.preventDefault()
+
+              copy(
+                `${window.location.protocol}//${window.location.host}${redirectPath}`,
+              )
+              toast.success({
+                message: 'Link copied',
+                autoDismissTimeout: 4000,
+                showCountdownBar: false,
+              })
+            }}>
+            <Box backgroundColor="rgba(0, 0, 0, 0.75)" padding="1.5rem">
+              <StyledList isOrdered>
+                <List.Item>
+                  Enter the URL of any site that stresses you out
+                </List.Item>
+                <List.Item>Bookmark the redirect link</List.Item>
+                <List.Item>
+                  Next time you visit, follow the bookmarked link
+                </List.Item>
+                <List.Item>
+                  Be greeted with a chance to stop and breathe before being
+                  redirected to your more stressful activities
+                </List.Item>
+              </StyledList>
+              <Input
+                onChange={(event: React.FormEvent<HTMLInputElement>) => {
+                  const newToUrl = event.currentTarget.value
+                  const newRedirectPath = `/redirect?to=${encodeURIComponent(
+                    newToUrl,
+                  )}`
+
+                  setRedirectPath(newRedirectPath)
+                }}
+                a11yLabel="URL"
+                type="url"
+                placeholder="https://"
+                defaultValue="https://"
+                marginTop="1.5rem"
+                required
+              />
+              <Set marginTop="1.5rem" justifyContent="flex-end">
+                <Button size="medium" kind="outlined" type="submit">
+                  Copy Link
+                  <Flex marginLeft="0.5rem" alignItems="center">
+                    <Res.Icon.link
+                      aria-hidden
+                      role="img"
+                      width="18"
+                      height="18"
+                    />
+                  </Flex>
+                </Button>
+                <Button
+                  size="medium"
+                  kind="outlined"
+                  onClick={() => {
+                    Router.push(redirectPath)
+                  }}>
+                  Go
+                  <Flex marginLeft="0.5rem" alignItems="center">
+                    <Res.Icon.navigation_circle_right
+                      aria-hidden
+                      role="img"
+                      width="18"
+                      height="18"
+                    />
+                  </Flex>
+                </Button>
+              </Set>
+            </Box>
+          </form>
+        )}
+      </Toast.Container>
+      <Box marginTop="1.5rem">
         <Flex flexDirection="column" alignItems="center">
           <Text>See an Example</Text>
-          <Link href="#">MSNBC Election Coverage</Link>
+          <NextLink
+            href={{
+              pathname: '/redirect',
+              query: {to: 'https://www.msnbc.com/elections'},
+            }}>
+            <a>MSNBC Election Coverage</a>
+          </NextLink>
         </Flex>
       </Box>
     </PageLayout>

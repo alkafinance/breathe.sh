@@ -28,6 +28,7 @@ class MyDocument extends Document {
 
     return {
       ...initialProps,
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       styles: [...(initialProps.styles as any), ...sheet.getStyleElement()],
     }
   }

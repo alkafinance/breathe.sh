@@ -1,9 +1,15 @@
+import {NextContext} from 'next'
 import {DefaultErrorIProps} from 'next/error'
 import React from 'react'
 
 class Error extends React.Component<DefaultErrorIProps> {
-  static getInitialProps({res, err}) {
-    const statusCode = res ? res.statusCode : err ? err.statusCode : null
+  static getInitialProps({res, err}: NextContext) {
+    const statusCode = res
+      ? res.statusCode
+      : err
+      ? // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        (err as any).statusCode
+      : null
 
     return {statusCode}
   }

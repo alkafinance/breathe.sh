@@ -3,28 +3,44 @@ import React from 'react'
 import {Res} from '../resources'
 
 export const PageFooter: React.FC = _props => (
-  <Flex
-    padding="major-3"
-    color="#fff"
-    flexDirection="row"
-    justifyContent="space-between">
+  <Flex padding="1.5rem" flexDirection="row" justifyContent="space-between">
     <Set spacing="major-1">
       {[
-        {Icon: Res.Icon.logo_facebook, href: '#facebook'},
-        {Icon: Res.Icon.logo_twitter, href: '#twitter'},
-        {Icon: Res.Icon.logo_instagram, href: '#instagram'},
-      ].map(({Icon, href}) => (
+        {
+          Icon: Res.Icon.logo_facebook,
+          title: 'Facebook Logo',
+          href: 'https://facebook.com/alkafinance',
+        },
+        {
+          Icon: Res.Icon.logo_twitter,
+          title: 'Twitter Logo',
+          href: 'https://twitter.com/alkafinance',
+        },
+        {
+          Icon: Res.Icon.logo_instagram,
+          title: 'Instagram Logo',
+          href: 'https://instagram.com/alkafinance',
+        },
+      ].map(({Icon, title, href}) => (
         <a href={href} key={href}>
-          <Flex padding="major-1" alignItems="center">
-            <Icon width="24" height="24" fill="#fff" />
+          <Flex padding="0.5rem" alignItems="center">
+            <Icon role="img" title={title} width="24" height="24" fill="#fff" />
           </Flex>
         </a>
       ))}
     </Set>
     <a href="https://alka.app">
-      <Flex padding="major-1" alignItems="center">
-        <Res.Icon.logo_alka width="48" height="48" fill="#fff" />
-        <Text fontWeight="600">Built by Alka</Text>
+      <Flex padding="0.5rem" alignItems="center">
+        <Res.Icon.logo_alka
+          role="img"
+          title="Alka Logo"
+          width="48"
+          height="48"
+          fill="#fff"
+        />
+        <Text color="#fff" fontWeight="600">
+          Built by Alka
+        </Text>
       </Flex>
     </a>
   </Flex>

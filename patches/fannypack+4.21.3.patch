@@ -1,3 +1,13 @@
+diff --git a/node_modules/fannypack/ts/Toast/ToastManager.d.ts b/node_modules/fannypack/ts/Toast/ToastManager.d.ts
+index 57949c8..74dcb7f 100644
+--- a/node_modules/fannypack/ts/Toast/ToastManager.d.ts
++++ b/node_modules/fannypack/ts/Toast/ToastManager.d.ts
+@@ -18,5 +18,3 @@ export declare const toastManagerDefaultProps: {
+         fannypack: {};
+     };
+ };
+-declare const _default;
+-export default _default;
 diff --git a/node_modules/fannypack/ts/types/theme.d.ts b/node_modules/fannypack/ts/types/theme.d.ts
 index 22df4af..bdcf195 100644
 --- a/node_modules/fannypack/ts/types/theme.d.ts

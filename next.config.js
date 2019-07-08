@@ -13,6 +13,7 @@ module.exports = withPlugins(
           {
             loader: '@svgr/webpack',
             options: {
+              titleProp: true,
               svgoConfig: {
                 plugins: {
                   removeViewBox: false,

@@ -41,6 +41,7 @@
     ]
   },
   "dependencies": {
+    "copy-text-to-clipboard": "2.1.0",
     "fannypack": "4.21.3",
     "html-react-parser": "^0.8.1",
     "next": "8.1.0",
