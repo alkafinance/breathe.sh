@@ -4,7 +4,8 @@ import ProgressiveImage from 'react-progressive-image'
 // @ts-ignore
 import blackSand from '../assets/black-sand.jpg?resize&sizes[]=640&sizes[]=768&sizes[]=1024&sizes[]=1366&sizes[]=1600&sizes[]=1920'
 
-export const PageBackground: React.FC = _props => {
+// eslint-disable-next-line react/display-name
+export const PageBackground = React.memo(_props => {
   const [videoLoaded, setVideoLoaded] = useState(false)
 
   return (
@@ -68,10 +69,10 @@ export const PageBackground: React.FC = _props => {
               width="100%"
               style={{objectFit: 'cover'}}
               loop>
-              <source
+              {/* <source
                 src={require('../assets/black-sand.webm')}
                 type="video/webm"
-              />
+              /> */}
               <source
                 src={require('../assets/black-sand.hevc.mp4')}
                 type="video/mp4; codecs=hevc"
@@ -92,4 +93,4 @@ export const PageBackground: React.FC = _props => {
       )}
     </ProgressiveImage>
   )
-}
+})

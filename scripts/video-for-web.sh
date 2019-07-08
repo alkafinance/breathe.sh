@@ -42,7 +42,7 @@ ffmpeg -i "$master_video_path" \
   -vframes 1 \
   -q:v 1 \
   "$@" "${master_video_dir}/${master_video_name}.jpg"
-Generate MP4 with H.264
+# Generate MP4 with H.264
 @see https://trac.ffmpeg.org/wiki/Encode/H.264
 ffmpeg -i "$master_video_path" \
   -map_metadata -1 \
@@ -69,7 +69,7 @@ ffmpeg -i "$master_video_path" \
 #      https://developers.google.com/media/vp9/settings/vod/#quality
 ffmpeg -i "$master_video_path" \
   -map_metadata -1 \
-  -c:v libvpx-vp9 -crf 31 \
+  -c:v libvpx-vp9 -crf 31 -b:v 0 \
   -movflags +faststart \
   -an \
   "$@" "${master_video_dir}/${master_video_name}.webm"
