@@ -15,6 +15,7 @@ import Router from 'next/router'
 import React, {useState} from 'react'
 import {PageLayout} from '../components/PageLayout'
 import {Res} from '../resources'
+import {getAnalytics} from '../core/analytics'
 
 const StyledList = styled(List)`
   list-style: none;
@@ -52,6 +53,7 @@ const Home: React.FC = _props => {
             onSubmit={event => {
               event.preventDefault()
 
+              getAnalytics().breatheLinkCreated()
               copy(
                 `${window.location.protocol}//${window.location.host}${redirectPath}`,
               )
@@ -107,6 +109,7 @@ const Home: React.FC = _props => {
                   size="medium"
                   kind="outlined"
                   onClick={() => {
+                    getAnalytics().breatheLinkCreated()
                     Router.push(redirectPath)
                   }}>
                   Go

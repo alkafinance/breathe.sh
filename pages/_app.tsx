@@ -4,7 +4,7 @@ import App, {Container} from 'next/app'
 import Head from 'next/head'
 import Router from 'next/router'
 import React from 'react'
-import {initGA, logPageView} from '../utils/analytics'
+import {initAnalytics, logPageView} from '../core/analytics'
 
 const theme: ThemeConfig = {
   global: {
@@ -38,7 +38,7 @@ const theme: ThemeConfig = {
 
 class MyApp extends App {
   componentDidMount() {
-    initGA()
+    initAnalytics()
     logPageView()
     if (Router.router) {
       Router.router.events.on('routeChangeComplete', logPageView)
