@@ -10,6 +10,7 @@ export const PageLayout: React.FC = ({children}) => (
     </Flex>
     <Flex flexDirection="column" position="relative" flex="1" minHeight="100vh">
       <Container
+        use="main"
         maxWidth="36rem"
         display="flex"
         flexDirection="column"
