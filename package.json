@@ -1,8 +1,8 @@
 {
-  "name": "@alkafinance/br8he",
+  "name": "@alkafinance/breathe.sh",
   "version": "0.0.0",
   "private": true,
-  "repository": "git@github.com:alkafinance/br8he.git",
+  "repository": "git@github.com:alkafinance/breathe.sh.git",
   "license": "UNLICENSED",
   "scripts": {
     "typecheck": "tsc --noEmit --pretty",

@@ -51,7 +51,11 @@ class MyApp extends App {
     return (
       <Container>
         <Head>
-          <title>Breathe</title>
+          <title>breathe.sh</title>
+          <meta
+            name="description"
+            content="Take a breathe before jumping into the most stressful parts of the internet"
+          />
         </Head>
         <FannypackThemeProvider theme={theme}>
           <Component {...pageProps} />
