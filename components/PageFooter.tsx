@@ -1,5 +1,6 @@
 import {Flex, Set, Text, styled, theme} from 'fannypack'
 import React from 'react'
+import {FacebookShareButton, TwitterShareButton} from 'react-share'
 import {Res} from '../resources'
 
 const Container = styled(Flex)`
@@ -19,26 +20,44 @@ export const PageFooter: React.FC = _props => (
     <Set spacing="major-1">
       {[
         {
-          Icon: Res.Icon.logo_facebook,
-          title: 'Facebook Logo',
-          href: 'https://facebook.com/alkafinance',
+          shareButton: (
+            <FacebookShareButton
+              url="https://breathe.sh"
+              quote="I found a way to take a breathe before jumping into the most stressful parts of the internet with https://breathe.sh"
+              hashtag="#mindfulness">
+              <Res.Icon.logo_facebook
+                role="img"
+                title="Facebook Logo"
+                width="24"
+                height="24"
+                fill="#fff"
+              />
+            </FacebookShareButton>
+          ),
+          key: 'facebook',
         },
         {
-          Icon: Res.Icon.logo_twitter,
-          title: 'Twitter Logo',
-          href: 'https://twitter.com/alkafinance',
+          shareButton: (
+            <TwitterShareButton
+              key="twitter"
+              url="https://breathe.sh"
+              title="I found a way to take a breathe before jumping into the most stressful parts of the internet with"
+              hashtags={['#mindfulness']}>
+              <Res.Icon.logo_twitter
+                role="img"
+                title="Twitter Logo"
+                width="24"
+                height="24"
+                fill="#fff"
+              />
+            </TwitterShareButton>
+          ),
+          key: 'twitter',
         },
-        {
-          Icon: Res.Icon.logo_instagram,
-          title: 'Instagram Logo',
-          href: 'https://instagram.com/alkafinance',
-        },
-      ].map(({Icon, title, href}) => (
-        <a href={href} key={href}>
-          <Flex padding="0.5rem" alignItems="center">
-            <Icon role="img" title={title} width="24" height="24" fill="#fff" />
-          </Flex>
-        </a>
+      ].map(({shareButton, key}) => (
+        <Flex key={key} padding="0.5rem" alignItems="center">
+          {shareButton}
+        </Flex>
       ))}
     </Set>
     <a href="https://alka.app">

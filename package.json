@@ -48,7 +48,8 @@
     "react": "16.8.6",
     "react-dom": "16.8.6",
     "react-lottie": "1.2.3",
-    "react-progressive-image": "0.6.0"
+    "react-progressive-image": "0.6.0",
+    "react-share": "3.0.0"
   },
   "devDependencies": {
     "@svgr/webpack": "4.3.1",
@@ -56,6 +57,7 @@
     "@types/react": "16.8.23",
     "@types/react-dom": "16.8.4",
     "@types/react-lottie": "1.2.2",
+    "@types/react-share": "2.1.1",
     "@types/segment-analytics": "0.0.31",
     "@typescript-eslint/eslint-plugin": "1.11.0",
     "@typescript-eslint/parser": "1.11.0",
