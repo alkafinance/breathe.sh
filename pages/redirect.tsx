@@ -49,7 +49,7 @@ const Redirect: React.FC = _props => {
       return
     }
     if (secsRemaining === 0) {
-      // window.location.replace(toUrl)
+      window.location.replace(toUrl)
 
       return
     }
