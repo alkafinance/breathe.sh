@@ -18,12 +18,12 @@ const theme: ThemeConfig = {
   },
   palette: {
     text: '#fff',
-    textInverted: '#899cc7',
+    textInverted: '#293e6d',
     primary: '#293e6d',
   },
   Input: {
     base: css`
-      color: #899cc7;
+      color: #293e6d;
       border-color: #000;
     `,
   },
