@@ -122,11 +122,7 @@ const Home: React.FC = _props => {
       </Toast.Container>
       <Flex flexDirection="column" alignItems="center" marginTop="1.5rem">
         <Text>See an Example</Text>
-        <NextLink
-          href={{
-            pathname: '/redirect',
-            query: {to: 'https://www.msnbc.com/elections'},
-          }}>
+        <NextLink href="/redirect/[toId]" as="/redirect/election">
           <a>MSNBC Election Coverage</a>
         </NextLink>
       </Flex>
