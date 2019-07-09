@@ -63,7 +63,7 @@ const Redirect: React.FC = _props => {
         </Flex>
         <Flex flexDirection="column" alignItems="center" marginTop="1.5rem">
           <Text fontWeight="600" textAlign="center">
-            Redirecting to <a href={toUrl || '#'}>{toUrl || '…'}</a> in{' '}
+            Breathe. Redirecting to <a href={toUrl || '#'}>{toUrl || '…'}</a> in{' '}
             {secsRemaining} {secsRemaining > 1 ? 'seconds' : 'second'}
           </Text>
         </Flex>
