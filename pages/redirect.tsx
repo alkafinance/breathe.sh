@@ -38,9 +38,10 @@ interface RedirectQuery {
 const Redirect: React.FC = _props => {
   const [secsRemaining, setTimeRemaining] = useState(DEFAULT_DURATION_SEC)
   const [paused, setPaused] = useState(false)
-  const router = useRouter<RedirectQuery>()
+  const router = useRouter()
 
-  const {to: encodedToUrl = 'https://alka.app'} = router.query || {}
+  const {to: encodedToUrl = 'https://alka.app'} =
+    (router.query as Partial<RedirectQuery> | undefined) || {}
   const toUrl = decodeURIComponent(encodedToUrl)
 
   useInterval(() => {

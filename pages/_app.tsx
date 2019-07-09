@@ -41,7 +41,7 @@ class MyApp extends App {
     initAnalytics()
     logPageView()
     if (Router.router) {
-      Router.router.events.on('routeChangeComplete', logPageView)
+      Router.events.on('routeChangeComplete', logPageView)
     }
   }
 

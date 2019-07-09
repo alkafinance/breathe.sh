@@ -1,36 +1,25 @@
 {
   "compilerOptions": {
-    // basic
-    "module": "commonjs",
-    "target": "es5",
-    "jsx": "react",
-    "lib": ["es2017", "esnext.asynciterable", "dom"],
     "allowJs": true,
     "checkJs": true,
-
-    // strict type-checking
-    "noImplicitAny": true,
-    "noImplicitThis": true,
-    "strictFunctionTypes": true,
-    "strictNullChecks": true,
-    "strictPropertyInitialization": true,
-
-    // additional checks
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "lib": ["es2017", "esnext.asynciterable", "dom"],
+    "module": "esnext",
+    "moduleResolution": "node",
+    "noEmit": true,
     "noFallthroughCasesInSwitch": true,
     "noImplicitReturns": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-
-    // module resolution
-    "moduleResolution": "node",
-    "esModuleInterop": true,
     "resolveJsonModule": true,
+    "skipLibCheck": false,
+    "strict": true,
+    "target": "es5",
     "types": []
   },
-  "include": [
-    "./@types/**/*",
-    "./pages/**/*",
-    "./components/**/*",
-    "./*.{ts,tsx}"
-  ]
+  "exclude": ["node_modules"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"]
 }

@@ -3,7 +3,7 @@ import Document, {
   Head,
   Html,
   Main,
-  NextDocumentContext,
+  DocumentContext,
   NextScript,
 } from 'next/document'
 import preval from 'preval.macro'
@@ -15,7 +15,7 @@ const faviconsHtml = preval`
 `
 
 class MyDocument extends Document {
-  static async getInitialProps(ctx: NextDocumentContext) {
+  static async getInitialProps(ctx: DocumentContext) {
     const sheet = new ServerStyleSheet()
 
     const originalRenderPage = ctx.renderPage

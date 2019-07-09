@@ -1,10 +1,9 @@
 const withPlugins = require('next-compose-plugins')
 const offline = require('next-offline')
-const typescript = require('@zeit/next-typescript')
 const optimizedImages = require('next-optimized-images')
 
 module.exports = withPlugins(
-  [offline, typescript, [optimizedImages, {handleImages: ['jpg', 'png']}]],
+  [offline, [optimizedImages, {handleImages: ['jpg', 'png']}]],
   {
     webpack: (config, _options) => {
       config.module.rules.push(
