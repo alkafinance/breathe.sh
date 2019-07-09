@@ -1,15 +1,5 @@
 import copy from 'copy-text-to-clipboard'
-import {
-  Box,
-  Button,
-  Flex,
-  Input,
-  List,
-  Set,
-  styled,
-  Text,
-  Toast,
-} from 'fannypack'
+import {Button, Flex, Input, List, Set, styled, Text, Toast} from 'fannypack'
 import NextLink from 'next/link'
 import Router from 'next/router'
 import React, {useState} from 'react'
@@ -63,7 +53,10 @@ const Home: React.FC = _props => {
                 showCountdownBar: false,
               })
             }}>
-            <Box backgroundColor="rgba(0, 0, 0, 0.75)" padding="1.5rem">
+            <Flex
+              flexDirection="column"
+              backgroundColor="rgba(0, 0, 0, 0.75)"
+              padding="1.5rem">
               <StyledList isOrdered>
                 <List.Item>
                   Enter the URL of any site that stresses you out
@@ -123,22 +116,20 @@ const Home: React.FC = _props => {
                   </Flex>
                 </Button>
               </Set>
-            </Box>
+            </Flex>
           </form>
         )}
       </Toast.Container>
-      <Box marginTop="1.5rem">
-        <Flex flexDirection="column" alignItems="center">
-          <Text>See an Example</Text>
-          <NextLink
-            href={{
-              pathname: '/redirect',
-              query: {to: 'https://www.msnbc.com/elections'},
-            }}>
-            <a>MSNBC Election Coverage</a>
-          </NextLink>
-        </Flex>
-      </Box>
+      <Flex flexDirection="column" alignItems="center" marginTop="1.5rem">
+        <Text>See an Example</Text>
+        <NextLink
+          href={{
+            pathname: '/redirect',
+            query: {to: 'https://www.msnbc.com/elections'},
+          }}>
+          <a>MSNBC Election Coverage</a>
+        </NextLink>
+      </Flex>
     </PageLayout>
   )
 }

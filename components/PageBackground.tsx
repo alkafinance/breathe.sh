@@ -1,4 +1,4 @@
-import {Box, Image} from 'fannypack'
+import {Flex, Image} from 'fannypack'
 import React from 'react'
 import ProgressiveImage from 'react-progressive-image'
 // @ts-ignore
@@ -19,7 +19,7 @@ export const PageBackground = React.memo(_props => {
         loading: boolean,
         srcSetData: {srcSet: string; sizes: string},
       ) => (
-        <Box position="fixed" width="100vw" height="100vh" overflow="hidden">
+        <Flex width="100vw" height="100vh" overflow="hidden">
           <Image
             src={require('../assets/black-sand.jpg?lqip')}
             fit="cover"
@@ -41,7 +41,7 @@ export const PageBackground = React.memo(_props => {
             transform="scale(1.1)"
             transition="opacity 250ms ease"
           />
-          <Box
+          <Flex
             position="absolute"
             width="100%"
             height="100%"
@@ -66,14 +66,14 @@ export const PageBackground = React.memo(_props => {
                 type="video/mp4; codecs=avc1.4D401E"
               />
             </video>
-          </Box>
-          <Box
+          </Flex>
+          <Flex
             position="absolute"
             width="100%"
             height="100%"
             backgroundColor="rgba(0, 0, 0, 0.25)"
           />
-        </Box>
+        </Flex>
       )}
     </ProgressiveImage>
   )

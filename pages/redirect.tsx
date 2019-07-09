@@ -1,10 +1,10 @@
-import {Box, Flex, Text} from 'fannypack'
+import {Flex, Text} from 'fannypack'
 import {useRouter} from 'next/router'
 import React, {EffectCallback, useEffect, useRef, useState} from 'react'
 import Lottie from 'react-lottie'
 import {PageLayout} from '../components/PageLayout'
 
-function useInterval(callback: EffectCallback, delay: number) {
+const useInterval = (callback: EffectCallback, delay: number) => {
   const savedCallback = useRef<EffectCallback>()
 
   // Remember the latest callback
@@ -49,7 +49,7 @@ const Redirect: React.FC = _props => {
       return
     }
     if (secsRemaining === 0) {
-      window.location.replace(toUrl)
+      // window.location.replace(toUrl)
 
       return
     }
@@ -76,25 +76,25 @@ const Redirect: React.FC = _props => {
 
   return (
     <PageLayout>
-      <Box marginTop="1.5rem">
-        <Flex flexDirection="column" alignItems="center" padding="1.5rem">
-          <Box marginTop="-4rem">
-            <Lottie
-              options={{
-                loop: true,
-                autoplay: true,
-                animationData: require('../assets/seed-of-life.lottie.json'),
-              }}
-              height={600}
-              width={600}
-            />
-          </Box>
-          <Text fontWeight="600" marginTop="-4rem" textAlign="center">
+      <Flex flexDirection="column" padding="1.5rem" marginTop="1.5rem">
+        <Flex flexDirection="column" alignItems="center" transform="scale(1.2)">
+          <Lottie
+            options={{
+              loop: true,
+              autoplay: true,
+              animationData: require('../assets/seed-of-life.lottie.json'),
+            }}
+            width="100%"
+            height="auto"
+          />
+        </Flex>
+        <Flex flexDirection="column" alignItems="center" marginTop="1.5rem">
+          <Text fontWeight="600" textAlign="center">
             Redirecting to <a href={toUrl}>{toUrl}</a> in {secsRemaining}{' '}
             {secsRemaining > 1 ? 'seconds' : 'second'}
           </Text>
         </Flex>
-      </Box>
+      </Flex>
     </PageLayout>
   )
 }

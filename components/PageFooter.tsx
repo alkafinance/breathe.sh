@@ -18,47 +18,35 @@ const Container = styled(Flex)`
 export const PageFooter: React.FC = _props => (
   <Container padding="0.5rem 1rem">
     <Set spacing="major-1">
-      {[
-        {
-          shareButton: (
-            <FacebookShareButton
-              url="https://breathe.sh"
-              quote="I found a way to take a breathe before jumping into the most stressful parts of the internet with https://breathe.sh"
-              hashtag="#mindfulness">
-              <Res.Icon.logo_facebook
-                role="img"
-                title="Facebook Logo"
-                width="24"
-                height="24"
-                fill="#fff"
-              />
-            </FacebookShareButton>
-          ),
-          key: 'facebook',
-        },
-        {
-          shareButton: (
-            <TwitterShareButton
-              key="twitter"
-              url="https://breathe.sh"
-              title="I found a way to take a breathe before jumping into the most stressful parts of the internet with"
-              hashtags={['#mindfulness']}>
-              <Res.Icon.logo_twitter
-                role="img"
-                title="Twitter Logo"
-                width="24"
-                height="24"
-                fill="#fff"
-              />
-            </TwitterShareButton>
-          ),
-          key: 'twitter',
-        },
-      ].map(({shareButton, key}) => (
-        <Flex key={key} padding="0.5rem" alignItems="center">
-          {shareButton}
+      <FacebookShareButton
+        url="https://breathe.sh"
+        quote="I found a way to take a breathe before jumping into the most stressful parts of the internet with https://breathe.sh"
+        hashtag="#mindfulness">
+        <Flex padding="0.5rem" alignItems="center">
+          <Res.Icon.logo_facebook
+            role="img"
+            title="Facebook Logo"
+            width="24"
+            height="24"
+            fill="#fff"
+          />
         </Flex>
-      ))}
+      </FacebookShareButton>
+      <TwitterShareButton
+        key="twitter"
+        url="https://breathe.sh"
+        title="I found a way to take a breathe before jumping into the most stressful parts of the internet with"
+        hashtags={['#mindfulness']}>
+        <Flex padding="0.5rem" alignItems="center">
+          <Res.Icon.logo_twitter
+            role="img"
+            title="Twitter Logo"
+            width="24"
+            height="24"
+            fill="#fff"
+          />
+        </Flex>
+      </TwitterShareButton>
     </Set>
     <a href="https://alka.app">
       <Flex padding="0.5rem" alignItems="center">

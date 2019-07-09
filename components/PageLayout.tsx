@@ -1,18 +1,14 @@
-import {Box, Flex, Container} from 'fannypack'
+import {Flex, Container} from 'fannypack'
 import React from 'react'
 import {PageBackground} from './PageBackground'
 import {PageFooter} from './PageFooter'
 
 export const PageLayout: React.FC = ({children}) => (
-  <Box>
-    <PageBackground />
-    <Flex
-      flexDirection="column"
-      position="absolute"
-      top="0"
-      left="0"
-      bottom="0"
-      right="0">
+  <>
+    <Flex flexDirection="column" position="fixed" width="100%" height="100%">
+      <PageBackground />
+    </Flex>
+    <Flex flexDirection="column" position="relative" flex="1" minHeight="100vh">
       <Container
         maxWidth="36rem"
         display="flex"
@@ -23,5 +19,5 @@ export const PageLayout: React.FC = ({children}) => (
       </Container>
       <PageFooter />
     </Flex>
-  </Box>
+  </>
 )

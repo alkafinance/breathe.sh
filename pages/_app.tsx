@@ -51,7 +51,7 @@ class MyApp extends App {
     return (
       <Container>
         <Head>
-          <title>breathe.sh</title>
+          <title>Breathe</title>
           <meta
             name="description"
             content="Take a breathe before jumping into the most stressful parts of the internet"

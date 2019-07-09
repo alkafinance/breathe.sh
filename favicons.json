@@ -5,13 +5,13 @@
   "masterPicture": "./assets/icon.png",
   "design": {
     "ios": {
-      "appName": "breathe.sh",
+      "appName": "Breathe",
       "pictureAspect": "backgroundAndMargin",
       "backgroundColor": "#ffffff",
       "margin": "14%"
     },
     "windows": {
-      "appName": "breathe.sh",
+      "appName": "Breathe",
       "pictureAspect": "white_silhouette",
       "backgroundColor": "#293e6d",
       "onConflict": "override",
@@ -23,7 +23,7 @@
       "margin": "14%",
       "themeColor": "#ffffff",
       "manifest": {
-        "name": "breathe.sh",
+        "name": "Breathe",
         "display": "standalone",
         "orientation": "portrait",
         "startUrl": "/",
