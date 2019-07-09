@@ -36,7 +36,7 @@ export const PageFooter: React.FC = _props => (
         key="twitter"
         url="https://breathe.sh"
         title="I found a way to take a breathe before jumping into the most stressful parts of the internet with"
-        hashtags={['#mindfulness']}>
+        hashtags={['mindfulness']}>
         <Flex padding="0.5rem" alignItems="center">
           <Res.Icon.logo_twitter
             role="img"
