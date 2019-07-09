@@ -5,7 +5,7 @@ import Router from 'next/router'
 import React, {useState} from 'react'
 import {PageLayout} from '../components/PageLayout'
 import {Res} from '../resources'
-import {getAnalytics} from '../core/analytics'
+import {getAnalytics} from '../utils/analytics'
 
 const StyledList = styled(List)`
   list-style: none;

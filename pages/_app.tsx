@@ -4,7 +4,7 @@ import App, {Container} from 'next/app'
 import Head from 'next/head'
 import Router from 'next/router'
 import React from 'react'
-import {initAnalytics, logPageView} from '../core/analytics'
+import {initAnalytics, logPageView} from '../utils/analytics'
 
 const theme: ThemeConfig = {
   global: {
