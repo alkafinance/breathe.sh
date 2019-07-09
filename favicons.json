@@ -37,10 +37,8 @@
       "masterPicture": "./assets/icon-foreground.svg"
     },
     "openGraph": {
-      "pictureAspect": "background_and_margin",
-      "margin": "12%",
-      "backgroundColor": "#ffffff",
-      "ratio": "1.91:1"
+      "pictureAspect": "no_change",
+      "masterPicture": "./assets/open-graph.jpg"
     }
   },
   "settings": {

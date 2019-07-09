@@ -38,10 +38,8 @@
         "masterPicture": "./assets/icon-foreground.svg"
       },
       "openGraph": {
-        "pictureAspect": "background_and_margin",
-        "margin": "12%",
-        "backgroundColor": "#ffffff",
-        "ratio": "1.91:1"
+        "pictureAspect": "no_change",
+        "masterPicture": "./assets/open-graph.jpg"
       }
     },
     "settings": {
@@ -51,47 +49,47 @@
     },
     "versioning": true
   },
-  "timestamp": 1562693615291,
+  "timestamp": 1562711743316,
   "result": {
     "status": "success"
   },
   "favicon": {
-    "package_url": "https://realfavicongenerator.net/files/26ad11769808edd29cf878b4661ac3f630692158/favicon_package_v0.16.zip",
+    "package_url": "https://realfavicongenerator.net/files/3a6f091eb9d3e93dd28e1b80b457bf0049a6da9e/favicon_package_v0.16.zip",
     "files_urls": [
-      "https://realfavicongenerator.net/files/26ad11769808edd29cf878b4661ac3f630692158/package_files/android-chrome-144x144.png",
-      "https://realfavicongenerator.net/files/26ad11769808edd29cf878b4661ac3f630692158/package_files/android-chrome-192x192.png",
-      "https://realfavicongenerator.net/files/26ad11769808edd29cf878b4661ac3f630692158/package_files/android-chrome-256x256.png",
-      "https://realfavicongenerator.net/files/26ad11769808edd29cf878b4661ac3f630692158/package_files/android-chrome-36x36.png",
-      "https://realfavicongenerator.net/files/26ad11769808edd29cf878b4661ac3f630692158/package_files/android-chrome-384x384.png",
-      "https://realfavicongenerator.net/files/26ad11769808edd29cf878b4661ac3f630692158/package_files/android-chrome-48x48.png",
-      "https://realfavicongenerator.net/files/26ad11769808edd29cf878b4661ac3f630692158/package_files/android-chrome-512x512.png",
-      "https://realfavicongenerator.net/files/26ad11769808edd29cf878b4661ac3f630692158/package_files/android-chrome-72x72.png",
-      "https://realfavicongenerator.net/files/26ad11769808edd29cf878b4661ac3f630692158/package_files/android-chrome-96x96.png",
-      "https://realfavicongenerator.net/files/26ad11769808edd29cf878b4661ac3f630692158/package_files/apple-touch-icon-114x114.png",
-      "https://realfavicongenerator.net/files/26ad11769808edd29cf878b4661ac3f630692158/package_files/apple-touch-icon-120x120.png",
-      "https://realfavicongenerator.net/files/26ad11769808edd29cf878b4661ac3f630692158/package_files/apple-touch-icon-144x144.png",
-      "https://realfavicongenerator.net/files/26ad11769808edd29cf878b4661ac3f630692158/package_files/apple-touch-icon-152x152.png",
-      "https://realfavicongenerator.net/files/26ad11769808edd29cf878b4661ac3f630692158/package_files/apple-touch-icon-180x180.png",
-      "https://realfavicongenerator.net/files/26ad11769808edd29cf878b4661ac3f630692158/package_files/apple-touch-icon-57x57.png",
-      "https://realfavicongenerator.net/files/26ad11769808edd29cf878b4661ac3f630692158/package_files/apple-touch-icon-60x60.png",
-      "https://realfavicongenerator.net/files/26ad11769808edd29cf878b4661ac3f630692158/package_files/apple-touch-icon-72x72.png",
-      "https://realfavicongenerator.net/files/26ad11769808edd29cf878b4661ac3f630692158/package_files/apple-touch-icon-76x76.png",
-      "https://realfavicongenerator.net/files/26ad11769808edd29cf878b4661ac3f630692158/package_files/apple-touch-icon.png",
-      "https://realfavicongenerator.net/files/26ad11769808edd29cf878b4661ac3f630692158/package_files/browserconfig.xml",
-      "https://realfavicongenerator.net/files/26ad11769808edd29cf878b4661ac3f630692158/package_files/favicon-16x16.png",
-      "https://realfavicongenerator.net/files/26ad11769808edd29cf878b4661ac3f630692158/package_files/favicon-194x194.png",
-      "https://realfavicongenerator.net/files/26ad11769808edd29cf878b4661ac3f630692158/package_files/favicon-32x32.png",
-      "https://realfavicongenerator.net/files/26ad11769808edd29cf878b4661ac3f630692158/package_files/favicon.ico",
-      "https://realfavicongenerator.net/files/26ad11769808edd29cf878b4661ac3f630692158/package_files/mstile-144x144.png",
-      "https://realfavicongenerator.net/files/26ad11769808edd29cf878b4661ac3f630692158/package_files/mstile-150x150.png",
-      "https://realfavicongenerator.net/files/26ad11769808edd29cf878b4661ac3f630692158/package_files/mstile-310x150.png",
-      "https://realfavicongenerator.net/files/26ad11769808edd29cf878b4661ac3f630692158/package_files/mstile-310x310.png",
-      "https://realfavicongenerator.net/files/26ad11769808edd29cf878b4661ac3f630692158/package_files/mstile-70x70.png",
-      "https://realfavicongenerator.net/files/26ad11769808edd29cf878b4661ac3f630692158/package_files/open-graph.png",
-      "https://realfavicongenerator.net/files/26ad11769808edd29cf878b4661ac3f630692158/package_files/safari-pinned-tab.svg",
-      "https://realfavicongenerator.net/files/26ad11769808edd29cf878b4661ac3f630692158/package_files/site.webmanifest"
+      "https://realfavicongenerator.net/files/3a6f091eb9d3e93dd28e1b80b457bf0049a6da9e/package_files/android-chrome-144x144.png",
+      "https://realfavicongenerator.net/files/3a6f091eb9d3e93dd28e1b80b457bf0049a6da9e/package_files/android-chrome-192x192.png",
+      "https://realfavicongenerator.net/files/3a6f091eb9d3e93dd28e1b80b457bf0049a6da9e/package_files/android-chrome-256x256.png",
+      "https://realfavicongenerator.net/files/3a6f091eb9d3e93dd28e1b80b457bf0049a6da9e/package_files/android-chrome-36x36.png",
+      "https://realfavicongenerator.net/files/3a6f091eb9d3e93dd28e1b80b457bf0049a6da9e/package_files/android-chrome-384x384.png",
+      "https://realfavicongenerator.net/files/3a6f091eb9d3e93dd28e1b80b457bf0049a6da9e/package_files/android-chrome-48x48.png",
+      "https://realfavicongenerator.net/files/3a6f091eb9d3e93dd28e1b80b457bf0049a6da9e/package_files/android-chrome-512x512.png",
+      "https://realfavicongenerator.net/files/3a6f091eb9d3e93dd28e1b80b457bf0049a6da9e/package_files/android-chrome-72x72.png",
+      "https://realfavicongenerator.net/files/3a6f091eb9d3e93dd28e1b80b457bf0049a6da9e/package_files/android-chrome-96x96.png",
+      "https://realfavicongenerator.net/files/3a6f091eb9d3e93dd28e1b80b457bf0049a6da9e/package_files/apple-touch-icon-114x114.png",
+      "https://realfavicongenerator.net/files/3a6f091eb9d3e93dd28e1b80b457bf0049a6da9e/package_files/apple-touch-icon-120x120.png",
+      "https://realfavicongenerator.net/files/3a6f091eb9d3e93dd28e1b80b457bf0049a6da9e/package_files/apple-touch-icon-144x144.png",
+      "https://realfavicongenerator.net/files/3a6f091eb9d3e93dd28e1b80b457bf0049a6da9e/package_files/apple-touch-icon-152x152.png",
+      "https://realfavicongenerator.net/files/3a6f091eb9d3e93dd28e1b80b457bf0049a6da9e/package_files/apple-touch-icon-180x180.png",
+      "https://realfavicongenerator.net/files/3a6f091eb9d3e93dd28e1b80b457bf0049a6da9e/package_files/apple-touch-icon-57x57.png",
+      "https://realfavicongenerator.net/files/3a6f091eb9d3e93dd28e1b80b457bf0049a6da9e/package_files/apple-touch-icon-60x60.png",
+      "https://realfavicongenerator.net/files/3a6f091eb9d3e93dd28e1b80b457bf0049a6da9e/package_files/apple-touch-icon-72x72.png",
+      "https://realfavicongenerator.net/files/3a6f091eb9d3e93dd28e1b80b457bf0049a6da9e/package_files/apple-touch-icon-76x76.png",
+      "https://realfavicongenerator.net/files/3a6f091eb9d3e93dd28e1b80b457bf0049a6da9e/package_files/apple-touch-icon.png",
+      "https://realfavicongenerator.net/files/3a6f091eb9d3e93dd28e1b80b457bf0049a6da9e/package_files/browserconfig.xml",
+      "https://realfavicongenerator.net/files/3a6f091eb9d3e93dd28e1b80b457bf0049a6da9e/package_files/favicon-16x16.png",
+      "https://realfavicongenerator.net/files/3a6f091eb9d3e93dd28e1b80b457bf0049a6da9e/package_files/favicon-194x194.png",
+      "https://realfavicongenerator.net/files/3a6f091eb9d3e93dd28e1b80b457bf0049a6da9e/package_files/favicon-32x32.png",
+      "https://realfavicongenerator.net/files/3a6f091eb9d3e93dd28e1b80b457bf0049a6da9e/package_files/favicon.ico",
+      "https://realfavicongenerator.net/files/3a6f091eb9d3e93dd28e1b80b457bf0049a6da9e/package_files/mstile-144x144.png",
+      "https://realfavicongenerator.net/files/3a6f091eb9d3e93dd28e1b80b457bf0049a6da9e/package_files/mstile-150x150.png",
+      "https://realfavicongenerator.net/files/3a6f091eb9d3e93dd28e1b80b457bf0049a6da9e/package_files/mstile-310x150.png",
+      "https://realfavicongenerator.net/files/3a6f091eb9d3e93dd28e1b80b457bf0049a6da9e/package_files/mstile-310x310.png",
+      "https://realfavicongenerator.net/files/3a6f091eb9d3e93dd28e1b80b457bf0049a6da9e/package_files/mstile-70x70.png",
+      "https://realfavicongenerator.net/files/3a6f091eb9d3e93dd28e1b80b457bf0049a6da9e/package_files/open-graph.png",
+      "https://realfavicongenerator.net/files/3a6f091eb9d3e93dd28e1b80b457bf0049a6da9e/package_files/safari-pinned-tab.svg",
+      "https://realfavicongenerator.net/files/3a6f091eb9d3e93dd28e1b80b457bf0049a6da9e/package_files/site.webmanifest"
     ],
-    "html_code": "<link rel=\"apple-touch-icon\" sizes=\"57x57\" href=\"/static/apple-touch-icon-57x57.png?v=QEJLgPob4q\">\n<link rel=\"apple-touch-icon\" sizes=\"60x60\" href=\"/static/apple-touch-icon-60x60.png?v=QEJLgPob4q\">\n<link rel=\"apple-touch-icon\" sizes=\"72x72\" href=\"/static/apple-touch-icon-72x72.png?v=QEJLgPob4q\">\n<link rel=\"apple-touch-icon\" sizes=\"76x76\" href=\"/static/apple-touch-icon-76x76.png?v=QEJLgPob4q\">\n<link rel=\"apple-touch-icon\" sizes=\"114x114\" href=\"/static/apple-touch-icon-114x114.png?v=QEJLgPob4q\">\n<link rel=\"apple-touch-icon\" sizes=\"120x120\" href=\"/static/apple-touch-icon-120x120.png?v=QEJLgPob4q\">\n<link rel=\"apple-touch-icon\" sizes=\"144x144\" href=\"/static/apple-touch-icon-144x144.png?v=QEJLgPob4q\">\n<link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"/static/apple-touch-icon-152x152.png?v=QEJLgPob4q\">\n<link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"/static/apple-touch-icon-180x180.png?v=QEJLgPob4q\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"/static/favicon-32x32.png?v=QEJLgPob4q\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"194x194\" href=\"/static/favicon-194x194.png?v=QEJLgPob4q\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"/static/android-chrome-192x192.png?v=QEJLgPob4q\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"/static/favicon-16x16.png?v=QEJLgPob4q\">\n<link rel=\"manifest\" href=\"/static/site.webmanifest?v=QEJLgPob4q\">\n<link rel=\"mask-icon\" href=\"/static/safari-pinned-tab.svg?v=QEJLgPob4q\" color=\"#293e6d\">\n<link rel=\"shortcut icon\" href=\"/static/favicon.ico?v=QEJLgPob4q\">\n<meta property=\"og:image\" content=\"/static/open-graph.png?v=QEJLgPob4q\">\n<meta name=\"apple-mobile-web-app-title\" content=\"Breathe\">\n<meta name=\"application-name\" content=\"Breathe\">\n<meta name=\"msapplication-TileColor\" content=\"#293e6d\">\n<meta name=\"msapplication-TileImage\" content=\"/static/mstile-144x144.png?v=QEJLgPob4q\">\n<meta name=\"msapplication-config\" content=\"/static/browserconfig.xml?v=QEJLgPob4q\">\n<meta name=\"theme-color\" content=\"#ffffff\">",
+    "html_code": "<link rel=\"apple-touch-icon\" sizes=\"57x57\" href=\"/static/apple-touch-icon-57x57.png?v=NmP9rv582E\">\n<link rel=\"apple-touch-icon\" sizes=\"60x60\" href=\"/static/apple-touch-icon-60x60.png?v=NmP9rv582E\">\n<link rel=\"apple-touch-icon\" sizes=\"72x72\" href=\"/static/apple-touch-icon-72x72.png?v=NmP9rv582E\">\n<link rel=\"apple-touch-icon\" sizes=\"76x76\" href=\"/static/apple-touch-icon-76x76.png?v=NmP9rv582E\">\n<link rel=\"apple-touch-icon\" sizes=\"114x114\" href=\"/static/apple-touch-icon-114x114.png?v=NmP9rv582E\">\n<link rel=\"apple-touch-icon\" sizes=\"120x120\" href=\"/static/apple-touch-icon-120x120.png?v=NmP9rv582E\">\n<link rel=\"apple-touch-icon\" sizes=\"144x144\" href=\"/static/apple-touch-icon-144x144.png?v=NmP9rv582E\">\n<link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"/static/apple-touch-icon-152x152.png?v=NmP9rv582E\">\n<link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"/static/apple-touch-icon-180x180.png?v=NmP9rv582E\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"/static/favicon-32x32.png?v=NmP9rv582E\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"194x194\" href=\"/static/favicon-194x194.png?v=NmP9rv582E\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"/static/android-chrome-192x192.png?v=NmP9rv582E\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"/static/favicon-16x16.png?v=NmP9rv582E\">\n<link rel=\"manifest\" href=\"/static/site.webmanifest?v=NmP9rv582E\">\n<link rel=\"mask-icon\" href=\"/static/safari-pinned-tab.svg?v=NmP9rv582E\" color=\"#293e6d\">\n<link rel=\"shortcut icon\" href=\"/static/favicon.ico?v=NmP9rv582E\">\n<meta property=\"og:image\" content=\"/static/open-graph.png?v=NmP9rv582E\">\n<meta name=\"apple-mobile-web-app-title\" content=\"Breathe\">\n<meta name=\"application-name\" content=\"Breathe\">\n<meta name=\"msapplication-TileColor\" content=\"#293e6d\">\n<meta name=\"msapplication-TileImage\" content=\"/static/mstile-144x144.png?v=NmP9rv582E\">\n<meta name=\"msapplication-config\" content=\"/static/browserconfig.xml?v=NmP9rv582E\">\n<meta name=\"theme-color\" content=\"#ffffff\">",
     "compression": "true",
     "overlapping_markups": [
       "link[rel=\"apple-touch-icon\"]",
@@ -115,6 +113,6 @@
     "type": "path",
     "path": "/static"
   },
-  "preview_picture_url": "https://realfavicongenerator.net/files/26ad11769808edd29cf878b4661ac3f630692158/favicon_preview.png",
+  "preview_picture_url": "https://realfavicongenerator.net/files/3a6f091eb9d3e93dd28e1b80b457bf0049a6da9e/favicon_preview.png",
   "version": "0.16"
 }
