@@ -39,9 +39,18 @@ const theme: ThemeConfig = {
 class MyApp extends App {
   componentDidMount() {
     initAnalytics()
-    logPageView()
-    if (Router.router) {
-      Router.events.on('routeChangeComplete', logPageView)
+    // Fix duplicate page view events on same page
+    // @see https://github.com/zeit/next.js/issues/3322#issuecomment-414070387
+    if (typeof window !== 'undefined') {
+      const customHistory = [window.location.pathname]
+
+      logPageView()
+      Router.events.on('routeChangeComplete', () => {
+        if (window.location.pathname !== customHistory[0]) {
+          logPageView()
+        }
+        customHistory.unshift(window.location.pathname)
+      })
     }
   }
 
