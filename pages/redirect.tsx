@@ -59,7 +59,7 @@ const Redirect: React.FC = _props => {
             }}
             width="100%"
             height="auto"
-            speed=".5"
+            speed={.5}
           />
         </Flex>
         <Flex flexDirection="column" alignItems="center" marginTop="1.5rem">
