@@ -1,10 +1,11 @@
 import {Flex, Text} from 'fannypack'
 import {useRouter} from 'next/router'
+import preval from 'preval.macro'
 import React, {useState} from 'react'
 import Lottie from 'react-lottie'
-import preval from 'preval.macro'
 import {PageLayout} from '../components/PageLayout'
 import {useInterval, useWindowFocused} from '../lib/hooks'
+import Error from './_error'
 
 const DEFAULT_DURATION_SEC = 15
 
@@ -46,6 +47,10 @@ const Redirect: React.FC = _props => {
 
     setTimeRemaining(secsRemaining - 1)
   }, 1000)
+
+  if (!toUrl) {
+    return <Error statusCode={404} title="" />
+  }
 
   return (
     <PageLayout>

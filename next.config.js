@@ -1,6 +1,12 @@
+const fs = require('fs')
 const withPlugins = require('next-compose-plugins')
 const offline = require('next-offline')
 const optimizedImages = require('next-optimized-images')
+const yaml = require('js-yaml')
+
+const redirects = yaml.safeLoad(
+  fs.readFileSync(require.resolve('./redirects.yml'), 'utf8'),
+)
 
 module.exports = withPlugins(
   [offline, [optimizedImages, {handleImages: ['jpg', 'png']}]],
@@ -39,6 +45,18 @@ module.exports = withPlugins(
       )
 
       return config
+    },
+    exportPathMap: defaultPathMap => {
+      return {
+        ...defaultPathMap,
+        ...Object.entries(redirects).reduce(
+          (acc, [id, to]) => ({
+            ...acc,
+            [id]: {page: '/redirect', query: {to}},
+          }),
+          {},
+        ),
+      }
     },
   },
 )

@@ -1,6 +1,6 @@
 import {css, ThemeProvider as FannypackThemeProvider} from 'fannypack'
 import {ThemeConfig} from 'fannypack/ts/types'
-import App, {Container} from 'next/app'
+import App, {AppContext, Container} from 'next/app'
 import Head from 'next/head'
 import Router from 'next/router'
 import React from 'react'
@@ -37,6 +37,16 @@ const theme: ThemeConfig = {
 }
 
 class MyApp extends App {
+  static async getInitialProps({Component, ctx}: AppContext) {
+    let pageProps = {}
+
+    if (Component.getInitialProps) {
+      pageProps = await Component.getInitialProps(ctx)
+    }
+
+    return {pageProps}
+  }
+
   componentDidMount() {
     initAnalytics()
     // Fix duplicate page view events on same page
