@@ -10,7 +10,7 @@ import preval from 'preval.macro'
 import {ServerStyleSheet} from 'fannypack'
 import React from 'react'
 
-const faviconsHtml = preval`
+const faviconsHtml: string = preval`
   module.exports = require('fs').readFileSync(require.resolve('../static/favicons.html'), 'utf8').replace(/\\n/g, '')
 `
 

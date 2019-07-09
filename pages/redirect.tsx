@@ -2,13 +2,21 @@ import {Flex, Text} from 'fannypack'
 import {useRouter} from 'next/router'
 import React, {useState} from 'react'
 import Lottie from 'react-lottie'
+import preval from 'preval.macro'
 import {PageLayout} from '../components/PageLayout'
 import {useInterval, useWindowFocused} from '../lib/hooks'
 
 const DEFAULT_DURATION_SEC = 15
 
+const redirects: {
+  [id: string]: string
+} = preval`
+  module.exports = require('js-yaml').safeLoad(require('fs').readFileSync(require.resolve('../redirects.yml'), 'utf8'));
+`
+
 interface RedirectQuery {
-  to: string
+  to?: string
+  toId?: string
 }
 
 const Redirect: React.FC = _props => {
@@ -16,12 +24,18 @@ const Redirect: React.FC = _props => {
   const focused = useWindowFocused()
   const router = useRouter()
 
-  const {to: encodedToUrl = 'https://alka.app'} =
-    (router.query as Partial<RedirectQuery> | undefined) || {}
-  const toUrl = decodeURIComponent(encodedToUrl)
+  const {to: encodedToUrl, toId} = (router.query || {}) as Partial<
+    RedirectQuery
+  >
+  const toUrlFromId = toId && toId !== '' ? redirects[toId] : null
+  const toUrl =
+    toUrlFromId ||
+    (encodedToUrl && encodedToUrl !== ''
+      ? decodeURIComponent(encodedToUrl)
+      : null)
 
   useInterval(() => {
-    if (!focused) {
+    if (!toUrl || !focused) {
       return
     }
     if (secsRemaining === 0) {
@@ -49,8 +63,8 @@ const Redirect: React.FC = _props => {
         </Flex>
         <Flex flexDirection="column" alignItems="center" marginTop="1.5rem">
           <Text fontWeight="600" textAlign="center">
-            Redirecting to <a href={toUrl}>{toUrl}</a> in {secsRemaining}{' '}
-            {secsRemaining > 1 ? 'seconds' : 'second'}
+            Redirecting to <a href={toUrl || '#'}>{toUrl || '…'}</a> in{' '}
+            {secsRemaining} {secsRemaining > 1 ? 'seconds' : 'second'}
           </Text>
         </Flex>
       </Flex>
