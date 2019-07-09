@@ -22,6 +22,7 @@ export const PageBackground = React.memo(_props => {
         <Flex width="100vw" height="100vh" overflow="hidden">
           <Image
             src={require('../assets/black-sand.jpg?lqip')}
+            alt="Black Sand"
             fit="cover"
             position="absolute"
             width="100%"
@@ -33,6 +34,7 @@ export const PageBackground = React.memo(_props => {
             src={src}
             srcSet={srcSetData.srcSet}
             sizes={srcSetData.sizes}
+            alt="Black Sand"
             fit="cover"
             position="absolute"
             width="100%"
