@@ -20,7 +20,7 @@ export const PageFooter: React.FC = _props => (
     <Set spacing="major-1">
       <FacebookShareButton
         url="https://breathe.sh"
-        quote="I found a way to take a breathe before jumping into the most stressful parts of the internet with https://breathe.sh"
+        quote="I found a way to take a breath before jumping into the most stressful parts of the internet with https://breathe.sh"
         hashtag="#mindfulness">
         <Flex padding="0.5rem" alignItems="center">
           <Res.Icon.logo_facebook
@@ -35,7 +35,7 @@ export const PageFooter: React.FC = _props => (
       <TwitterShareButton
         key="twitter"
         url="https://breathe.sh"
-        title="I found a way to take a breathe before jumping into the most stressful parts of the internet with"
+        title="I found a way to take a breath before jumping into the most stressful parts of the internet with"
         hashtags={['mindfulness']}>
         <Flex padding="0.5rem" alignItems="center">
           <Res.Icon.logo_twitter
