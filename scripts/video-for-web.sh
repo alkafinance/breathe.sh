@@ -69,7 +69,7 @@ ffmpeg -i "$master_video_path" \
 #      https://developers.google.com/media/vp9/settings/vod/#quality
 ffmpeg -i "$master_video_path" \
   -map_metadata -1 \
-  -c:v libvpx-vp9 -crf 31 -minrate 800K -maxrate 800K -b:v 800K \
+  -c:v libvpx-vp9 -minrate 1M -maxrate 1M -b:v 1M \
   -pix_fmt yuv420p \
   -movflags +faststart \
   -an \
