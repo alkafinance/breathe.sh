@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="300px" height="300px" viewBox="0 0 300 300" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 55.1 (78136) - https://sketchapp.com -->
-    <title></title>
+    <title>navigation-circle-right</title>
     <desc>Created with Sketch.</desc>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-family="GLYPHICONSBasicSet-Regular, GLYPHICONS Basic Set" font-size="32" font-weight="normal">
-        <g id="Artboard" transform="translate(-169.000000, -111.000000)" fill="#FFFFFF">
-            <text id="">
-                <tspan x="169" y="143"></tspan>
+    <g id="Mocks" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-family="GLYPHICONSBasicSet-Regular, GLYPHICONS Basic Set" font-size="300" font-weight="normal">
+        <g id="Artboard" transform="translate(-1793.000000, -615.000000)" fill="#FFFFFF">
+            <text id="navigation-circle-right">
+                <tspan x="1793" y="915"></tspan>
             </text>
         </g>
     </g>
