@@ -73,7 +73,7 @@ class MyApp extends App {
           <title>Breathe</title>
           <meta
             name="description"
-            content="Take a breathe before jumping into the most stressful parts of the internet"
+            content="Take a breath before jumping into the most stressful parts of the internet"
           />
         </Head>
         <FannypackThemeProvider theme={theme}>
