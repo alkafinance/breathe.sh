@@ -1,13 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="300px" height="300px" viewBox="0 0 300 300" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 55.1 (78136) - https://sketchapp.com -->
-    <title>navigation-circle-right</title>
-    <desc>Created with Sketch.</desc>
-    <g id="Mocks" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-family="GLYPHICONSBasicSet-Regular, GLYPHICONS Basic Set" font-size="300" font-weight="normal">
-        <g id="Artboard" transform="translate(-1793.000000, -615.000000)" fill="#FFFFFF">
-            <text id="navigation-circle-right">
-                <tspan x="1793" y="915"></tspan>
-            </text>
-        </g>
-    </g>
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <path d="M0 11.5a11.5 11.5 0 1 1 23 0 11.5 11.5 0 0 1-23 0zm1 0a10.5 10.5 0 1 0 21 0 10.5 10.5 0 0 0-21 0z"/>
+  <path d="M13.6 7.4a.5.5 0 0 1 .8-.8l4.5 4.5c.1.2.1.6 0 .8l-4.5 4.5a.5.5 0 0 1-.8-.8l3.7-3.6H5.5a.5.5 0 1 1 0-1h11.8z"/>
 </svg>
