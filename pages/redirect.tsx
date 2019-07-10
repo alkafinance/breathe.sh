@@ -64,13 +64,13 @@ const Redirect: React.FC = _props => {
             }}
             width="100%"
             height="auto"
-            speed={.5}
+            speed={0.5}
           />
         </Flex>
         <Flex flexDirection="column" alignItems="center" marginTop="1.5rem">
           <Text fontWeight="600" textAlign="center">
-            Breathe. Redirecting to <a href={toUrl || '#'}>{toUrl || '…'}</a> in{' '}
-            {secsRemaining} {secsRemaining > 1 ? 'seconds' : 'second'}
+            Breathe. Redirecting to <a href={toUrl}>{toUrl}</a> in{' '}
+            {secsRemaining} {secsRemaining === 1 ? 'second' : 'seconds'}
           </Text>
         </Flex>
       </Flex>
