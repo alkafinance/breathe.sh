@@ -7,7 +7,7 @@
 
 Built with [Next.js](https://nextjs.org/).
 
-<img width="45%" style="margin-right:5%;" src=".github/screenshot-home-page.jpg" alt="breathe.sh home page screenshot"><img width="45%" style="margin-left:5%;" src=".github/screenshot-redirect-page.jpg" alt="breathe.sh redirect page screenshot">
+![breathe.sh screenshots](.github/screenshots.png)
 
 ## Development
 
