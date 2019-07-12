@@ -1,8 +1,8 @@
 import {Flex, Image} from 'fannypack'
 import React from 'react'
 import ProgressiveImage from 'react-progressive-image'
-// eslint-disable-next-line import/no-unresolved
-import blackSand from '../assets/black-sand.jpg?resize&sizes[]=640&sizes[]=768&sizes[]=1024&sizes[]=1366&sizes[]=1600&sizes[]=1920'
+// @ts-ignore
+import blackSand from '../../assets/black-sand.jpg?resize&sizes[]=640&sizes[]=768&sizes[]=1024&sizes[]=1366&sizes[]=1600&sizes[]=1920' // eslint-disable-line import/no-unresolved
 
 export const PageBackground = React.memo(_props => {
   return (
@@ -21,7 +21,7 @@ export const PageBackground = React.memo(_props => {
         <Flex width="100vw" height="100vh" overflow="hidden">
           <Image
             // eslint-disable-next-line import/no-unresolved
-            src={require('../assets/black-sand.jpg?lqip')}
+            src={require('../../assets/black-sand.jpg?lqip')}
             alt="Black Sand"
             fit="cover"
             position="absolute"
@@ -56,15 +56,15 @@ export const PageBackground = React.memo(_props => {
               muted
               loop>
               <source
-                src={require('../assets/black-sand.webm')}
+                src={require('../../assets/black-sand.webm')}
                 type="video/webm"
               />
               <source
-                src={require('../assets/black-sand.hevc.mp4')}
+                src={require('../../assets/black-sand.hevc.mp4')}
                 type="video/mp4; codecs=hevc"
               />
               <source
-                src={require('../assets/black-sand.h264.mp4')}
+                src={require('../../assets/black-sand.h264.mp4')}
                 type="video/mp4; codecs=avc1.4D401E"
               />
             </video>

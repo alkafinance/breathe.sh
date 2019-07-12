@@ -3,9 +3,9 @@ import {Button, Flex, Input, List, Set, styled, Text, Toast} from 'fannypack'
 import NextLink from 'next/link'
 import Router from 'next/router'
 import React, {useState} from 'react'
-import {PageLayout} from '../components/PageLayout'
-import {Res} from '../resources'
-import {getAnalytics} from '../utils/analytics'
+import {PageLayout} from '../ui/components/PageLayout'
+import {Res} from '../ui/resources'
+import {getAnalytics} from '../core/analytics'
 
 const StyledList = styled(List)`
   list-style: none;

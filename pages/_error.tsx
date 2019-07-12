@@ -2,7 +2,7 @@ import {Flex, Heading} from 'fannypack'
 import {NextPageContext} from 'next'
 import {ErrorProps} from 'next/error'
 import React from 'react'
-import {PageLayout} from '../components/PageLayout'
+import {PageLayout} from '../ui/components/PageLayout'
 
 const statusCodes: {[code: number]: string} = {
   400: 'Bad Request',

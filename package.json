@@ -11,8 +11,8 @@
     "build": "next build",
     "export": "rm -rf .next out && yarn build && next export",
     "start": "next start",
-    "postinstall": "patch-package; bash scripts/postinstall.sh",
-    "codegen:favicons": "favico --config favicons.json"
+    "codegen:favicons": "favico --config favicons.json",
+    "postinstall": "patch-package; bash scripts/postinstall.sh"
   },
   "prettier": {
     "bracketSpacing": false,
@@ -31,12 +31,12 @@
     }
   },
   "lint-staged": {
-    "**/*.{js,ts,tsx,json}": [
+    "**/*.{js,ts,tsx,json,yml,yaml}": [
       "prettier --write",
       "git add"
     ],
     "**/*.{js,ts,tsx}": [
-      "eslint --ext .js,.ts,.tsx --cache",
+      "eslint --ext .js,.ts,.tsx --cache --fix",
       "git add"
     ]
   },

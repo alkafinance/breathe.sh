@@ -4,8 +4,8 @@ import {useRouter} from 'next/router'
 import preval from 'preval.macro'
 import React, {useState} from 'react'
 import Lottie from 'react-lottie'
-import {PageLayout} from '../components/PageLayout'
-import {useInterval, useWindowFocused} from '../lib/hooks'
+import {PageLayout} from '../ui/components/PageLayout'
+import {useInterval, useWindowFocused} from '../ui/hooks'
 import Error from './_error'
 
 const DEFAULT_DURATION_SEC = 15
