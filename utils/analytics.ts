@@ -1,4 +1,4 @@
-import Avo from './__generated__/Avo.gen'
+import * as Avo from './__generated__/Avo.gen'
 
 export const initAnalytics = () => {
   Avo.initAvo(

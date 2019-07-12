@@ -123,6 +123,7 @@ const Home: React.FC = _props => {
       <Flex flexDirection="column" alignItems="center" marginTop="1.5rem">
         <Text>See an Example</Text>
         <NextLink href="/[toId]" as="/election">
+          {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
           <a>MSNBC Election Coverage</a>
         </NextLink>
       </Flex>

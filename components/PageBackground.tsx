@@ -1,10 +1,9 @@
 import {Flex, Image} from 'fannypack'
 import React from 'react'
 import ProgressiveImage from 'react-progressive-image'
-// @ts-ignore
+// eslint-disable-next-line import/no-unresolved
 import blackSand from '../assets/black-sand.jpg?resize&sizes[]=640&sizes[]=768&sizes[]=1024&sizes[]=1366&sizes[]=1600&sizes[]=1920'
 
-// eslint-disable-next-line react/display-name
 export const PageBackground = React.memo(_props => {
   return (
     <ProgressiveImage
@@ -21,6 +20,7 @@ export const PageBackground = React.memo(_props => {
       ) => (
         <Flex width="100vw" height="100vh" overflow="hidden">
           <Image
+            // eslint-disable-next-line import/no-unresolved
             src={require('../assets/black-sand.jpg?lqip')}
             alt="Black Sand"
             fit="cover"

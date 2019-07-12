@@ -1,8 +1,8 @@
 import {Flex, Heading} from 'fannypack'
 import {NextPageContext} from 'next'
 import {ErrorProps} from 'next/error'
-import {PageLayout} from '../components/PageLayout'
 import React from 'react'
+import {PageLayout} from '../components/PageLayout'
 
 const statusCodes: {[code: number]: string} = {
   400: 'Bad Request',
@@ -14,17 +14,16 @@ const statusCodes: {[code: number]: string} = {
 class Error extends React.Component<ErrorProps> {
   static getInitialProps({res, err}: NextPageContext) {
     const statusCode =
+      // eslint-disable-next-line @typescript-eslint/no-magic-numbers
       res && res.statusCode ? res.statusCode : err ? err.statusCode : 404
 
     return {statusCode}
   }
 
   render() {
-    const {statusCode} = this.props
+    const {statusCode, title: titleProp} = this.props
     const title =
-      this.props.title ||
-      statusCodes[statusCode] ||
-      'An unexpected error has occurred'
+      titleProp || statusCodes[statusCode] || 'An unexpected error has occurred'
 
     return (
       <PageLayout>

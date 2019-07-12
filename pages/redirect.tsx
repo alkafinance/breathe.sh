@@ -1,5 +1,6 @@
 import {Flex, Text} from 'fannypack'
 import {useRouter} from 'next/router'
+// eslint-disable-next-line import/no-extraneous-dependencies
 import preval from 'preval.macro'
 import React, {useState} from 'react'
 import Lottie from 'react-lottie'
@@ -46,6 +47,7 @@ const Redirect: React.FC = _props => {
     }
 
     setTimeRemaining(secsRemaining - 1)
+    // eslint-disable-next-line @typescript-eslint/no-magic-numbers
   }, 1000)
 
   if (!toUrl) {
